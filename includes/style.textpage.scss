@@ -37,6 +37,15 @@ $font-size-minus1: 	0.8em;
 $font-size-minus2: 	0.64em;
 $font-size-minus3: 	0.512em;
 
+$font-size-rem-plus4: 	2.441rem;
+$font-size-rem-plus3: 	1.953rem;
+$font-size-rem-plus2: 	1.563rem;
+$font-size-rem-plus1: 	1.25rem;
+$font-size-rem-default:	1rem;
+$font-size-rem-minus1: 	0.8rem;
+$font-size-rem-minus2: 	0.64rem;
+$font-size-rem-minus3: 	0.512rem;
+
 // Palette URL: http://paletton.com/#uid=31t0U0kgXBz6M+VdTTkg+oqcK4P */
 // As hex codes */
 $color-primary-0: #FFEA78;	// Main Primary color */ Yellow
@@ -71,6 +80,8 @@ body {
 	padding: 0;
 	text-align: center;
 	background: $color-primary-0;
+	font-size: $font-size-rem-default;
+    -webkit-text-size-adjust: none;
 
 }
 ul {
@@ -199,7 +210,7 @@ footer {
 		text-align: left;
 		display: inline-block;
 		max-width: 30vh;
-		padding: 0 1em;
+		padding: 0 1em 0.25em 1em;
 		h3 {
 			text-decoration: underline;
 			font-weight: 300;
@@ -210,6 +221,9 @@ footer {
 			font-weight: 200;
 			color: $color-secondary-2-1;
 			font-size: $font-size-minus1;
+			a {
+				color: $color-secondary-2-1;
+			}
 		}
 	}
 }
@@ -217,10 +231,54 @@ footer {
 
 
 .copyright {
+	padding: 1em 0;
 	p {
 		font-size: $font-size-minus3;
 		margin: 0;
 		padding: 0;
 		color: $color-secondary-2-0;
+	}
+}
+
+
+@media screen and (max-width: 640px) {
+	body {
+		font-size: $font-size-rem-plus1;
+	}
+	.headerMenu {
+		height: auto;
+		li {
+			display: block;
+			border-style: solid none;
+    		border-width: 1px;
+			border-color: $color-secondary-2-1;
+			h3 {
+				font-size: $font-size-rem-default;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		font-size: $font-size-rem-plus2;
+	}
+	.footerMenu {
+		nav {
+			display: block;
+			text-align: left;
+			h3, h4 {
+				font-size: $font-size-minus2;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+	body {
+		font-size: $font-size-rem-plus3;
+	}
+	.body-textbox {
+		width: 90vh;
 	}
 }
