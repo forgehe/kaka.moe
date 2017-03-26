@@ -147,6 +147,9 @@ a  {
 			margin: auto auto;
 			padding: 0.5em 0.75em;
 			color: $color-secondary-2-1;
+			a {
+				color: $color-secondary-2-1;
+			}
 		}
 	}
 
