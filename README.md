@@ -1,4 +1,6 @@
 # kaka.moe
-kaka.moe
+What is this?
+It's a website.
 
-What is this
+I use php just for the includes() lol
+
