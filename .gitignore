@@ -1,6 +1,6 @@
 not_public_html/
-*/not_public_html/
 .well-known/
+metadata/
 AvolicisSucks.html
 google8e417e2d8feac378.html
 htaccess
@@ -8,3 +8,5 @@ koala-config.json
 traffic.html
 trafficlive.html
 *.txt
+*.mp4
+*.webm
