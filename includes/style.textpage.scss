@@ -253,7 +253,7 @@ footer {
     		border-width: 1px;
 			border-color: $color-secondary-2-1;
 			h3 {
-				font-size: $font-size-rem-default;
+				font-size: $font-size-default;
 			}
 		}
 	}
@@ -261,7 +261,7 @@ footer {
 
 @media screen and (max-width: 480px) {
 	body {
-		font-size: $font-size-rem-plus2;
+		font-size: $font-size-rem-plus1;
 	}
 	.footerMenu {
 		nav {
@@ -276,9 +276,9 @@ footer {
 
 @media screen and (max-width: 320px) {
 	body {
-		font-size: $font-size-rem-plus3;
+		font-size: $font-size-rem-plus1;
 	}
 	.body-textbox {
-		width: 90vh;
+		width: 90vw;
 	}
 }
