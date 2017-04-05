@@ -20,7 +20,6 @@ require('includes/head.html');
 		
 
 		require('includes/body-index.html');
-		//include("includes/body-index-seasonal.html");
 	?>
 	
 </body>
