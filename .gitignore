@@ -7,6 +7,14 @@ htaccess
 koala-config.json
 traffic.html
 trafficlive.html
-*.txt
 *.mp4
 *.webm
+*.txt
+*.ini
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.ico
+*.ttf
+*.zip
