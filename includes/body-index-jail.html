@@ -1,48 +1,48 @@
 <video id="bgvid" loop autoplay>
-    <source type="video/webm" src="../resources/kaka.webm">
-        <source type="video/mp4" src="../resources/kaka.mp4">
-            Your browser sucks, and it can't load this video...
-        </video>
-        <div id="overlay">
-            Kaka
-        </div>
-        <<div class="wrapper">
-            <img id="jail" src="../resources/seasonal/jail.jpg">
-        </div>
-        
-        <style type="text/css">
-            .wrapper {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100vh;
-                width: 640px;
-                z-index: 1000;
+  <source type="video/webm" src="../resources/kaka.webm" />
+  <source type="video/mp4" src="../resources/kaka.mp4" />
+  Your browser sucks, and it can't load this video...
+</video>
+<div id="overlay">Kaka</div>
+<
+<div class="wrapper">
+  <img id="jail" src="../resources/seasonal/jail.jpg" />
+</div>
 
+<style type="text/css">
+  .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 640px;
+    z-index: 1000;
+  }
 
-            }
+  #jail {
+    position: absolute;
+    left: -500px;
+    height: 100vh;
+    transition: 1s;
+  }
 
-            #jail {
-                position: absolute;
-                left: -500px;
-                height: 100vh;
-                transition: 1s;
-            }
+  .wrapper:hover #jail {
+    transition: 1s;
+    left: 0;
+  }
+</style>
 
-            .wrapper:hover #jail {
-                transition: 1s;
-                left: 0;
-            }
-        </style>
+<div onclick="playVid(); this.style.display = 'none'" id="playbutton">
+  Play Video
+</div>
 
+<div class="copyright">
+  <p>
+    Copyright <a href="about.php">forgehe</a> © 2017
+    <a href="clones.php">I guess</a>
+  </p>
+</div>
 
-        <div onclick="playVid(); this.style.display = 'none'" id="playbutton">Play Video</div>
-
-        <div class="copyright">
-           <p >Copyright <a href="about.php">forgehe</a> © 2017 <a href="clones.php">I guess</a></p>
-       </div>
-       
-       
 <!-- 
 Visit http://kaka.moe/list.html for a list of pages on the site
 

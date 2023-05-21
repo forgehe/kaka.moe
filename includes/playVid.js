@@ -1,13 +1,13 @@
-function playVid(){
-var vid = document.getElementById("bgvid");
-		vid.play();
-// There is no stopping the meme train CHOOO CHOOOO
-};
-
-window.onload = function() {
-    var backgroundAudio=document.getElementById("bgvid");
-    backgroundAudio.volume=0.7;
+function playVid() {
+  var vid = document.getElementById("bgvid");
+  vid.play();
+  // There is no stopping the meme train CHOOO CHOOOO
 }
+
+window.onload = function () {
+  var backgroundAudio = document.getElementById("bgvid");
+  backgroundAudio.volume = 0.7;
+};
 
 /*
 

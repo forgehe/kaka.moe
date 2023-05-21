@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>GetOutOfMyHead</title>
+	<title>GetOutOfMyHead</title>
 
-<?php 
+	<?php
+	$metaKeywords = 'doki doki literature club, ddlc, sayori, secret';
+	require('includes/head.html');
+	?>
 
-$metaKeywords = 'doki doki literature club, ddlc, sayori, secret';
-require('includes/head.html');
-
-?>
-<link rel="stylesheet" type="text/css" href="includes/style.videopage.css">
-<script async="true" src="includes/playVid.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="includes/style.videopage.css">
+	<script async="true" src="includes/playVid.js"></script>
 </head>
 
-
 <body>
+
 	<?php
-
-		require('includes/body-sayorisecret.html');
-
+	require('includes/body-sayorisecret.html');
 	?>
-	
+
 </body>
+
 </html>

@@ -4,19 +4,25 @@
 <div id="seasonalBG"></div>
 -->
 <video id="bgvid" loop autoplay>
-        <source type="video/webm" src="../resources/christmas.webm">
-            <source type="video/mp4" src="../resources/christmas.mp4">
-                Your browser sucks, and it can't load this video...
-            </video>
+  <source type="video/webm" src="../resources/christmas.webm" />
+  <source type="video/mp4" src="../resources/christmas.mp4" />
+  Your browser sucks, and it can't load this video...
+</video>
 
-<button onclick="playVid(); this.style.display = 'none'" type="button" id="playbutton">Play Video</button>
+<button
+  onclick="playVid(); this.style.display = 'none'"
+  type="button"
+  id="playbutton"
+>
+  Play Video
+</button>
 
 <h1 id="seasonalText">HOHOHO</h1>
 <style>
-    #seasonal {
-        position: fixed;
-        z-index: 100;
-        /*
+  #seasonal {
+    position: fixed;
+    z-index: 100;
+    /*
         right: 0;
         top: 50%;
         transform: translateY(-50%);
@@ -24,28 +30,26 @@
         width: 100%;
         background-size: cover;
         */
-        /**/
-        left: 0;
-        top: 0;
-        height: 100%;
-        /**/
-    }
-    #seasonalText {
-        position: fixed;
-        right: 0;
-        top: 0;
-        z-index: 101;
-        font-family: 'Dosis', sans-serif; font-weight: 200;
-        font-size: 7em;
-        margin: .2em .5em;
-        color: white;
-        text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;  
-    }
-    /*
+    /**/
+    left: 0;
+    top: 0;
+    height: 100%;
+    /**/
+  }
+  #seasonalText {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 101;
+    font-family: "Dosis", sans-serif;
+    font-weight: 200;
+    font-size: 7em;
+    margin: 0.2em 0.5em;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+  /*
     #seasonalBG {
         position: fixed;
         width: 100%;
@@ -58,11 +62,8 @@
     */
 </style>
 <script type="text/javascript">
-    window.onload = function() {
-        document.getElementById("overlay").style.display = 'none';
-        document.getElementById("bgvid").style.display = 'none';
-    }
-
-    
-        
+  window.onload = function () {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("bgvid").style.display = "none";
+  };
 </script>

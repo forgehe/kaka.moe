@@ -1,37 +1,46 @@
 <div class="sucks">
-		<h1><span id="you"></span> Suck<span id="plural"></span></h1>
+  <h1><span id="you"></span> Suck<span id="plural"></span></h1>
 </div>
 
-
 <style type="text/css">
-	@-webkit-keyframes fuckyouiwasright {  
-		0% { opacity: 1.0; color:#FFFF00; }
-		25% {color:#FD1C03}
-		50% { opacity: 0.2; color:#00FF00; }
-		75% {color:#00FFFF}
-		100% { opacity: 1.0; color:#FF00CC; }
-	}
+  @-webkit-keyframes fuckyouiwasright {
+    0% {
+      opacity: 1;
+      color: #ffff00;
+    }
+    25% {
+      color: #fd1c03;
+    }
+    50% {
+      opacity: 0.2;
+      color: #00ff00;
+    }
+    75% {
+      color: #00ffff;
+    }
+    100% {
+      opacity: 1;
+      color: #ff00cc;
+    }
+  }
 
-	.sucks {
-		-webkit-animation-name: fuckyouiwasright;  
-		-webkit-animation-iteration-count: infinite;  
-		-webkit-animation-duration: 0.5s; 
-		font-size: 75pt;
-		text-align: center;
-	}   
+  .sucks {
+    -webkit-animation-name: fuckyouiwasright;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 0.5s;
+    font-size: 75pt;
+    text-align: center;
+  }
 </style>
 <script type="text/javascript">
-	
-	onload = function() {
-		var name =  window.location.hash.substr(1)
-    
-		if(window.location.hash) {
-			document.getElementById('you').innerHTML = name;
-			document.getElementById('plural').innerHTML = "s";
-		} else {
-			document.getElementById('you').innerHTML = "You";
-		}
+  onload = function () {
+    var name = window.location.hash.substr(1);
 
-	}
-
+    if (window.location.hash) {
+      document.getElementById("you").innerHTML = name;
+      document.getElementById("plural").innerHTML = "s";
+    } else {
+      document.getElementById("you").innerHTML = "You";
+    }
+  };
 </script>
